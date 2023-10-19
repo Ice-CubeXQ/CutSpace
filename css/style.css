@@ -1019,6 +1019,99 @@ textarea.input {
     background-color: rgba(255, 255, 255, 0.8470588235);
   }
 }
+
+@media (min-width: 71.25em) {
+  .choose {
+    padding-top: 7rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 71.25em) {
+  .choose {
+    padding-top: clamp( 1.25rem , -0.993902439rem  +  11.2195121951vw , 7rem );
+  }
+}
+@media (max-width: 20em) {
+  .choose {
+    padding-top: 1.25rem;
+  }
+}
+@media (min-width: 71.25em) {
+  .choose {
+    padding-bottom: 7rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 71.25em) {
+  .choose {
+    padding-bottom: clamp( 1.25rem , -0.993902439rem  +  11.2195121951vw , 7rem );
+  }
+}
+@media (max-width: 20em) {
+  .choose {
+    padding-bottom: 1.25rem;
+  }
+}
+.choose__title {
+  text-align: center;
+}
+@media (min-width: 71.25em) {
+  .choose__title:not(:last-child) {
+    margin-bottom: 3.375rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 71.25em) {
+  .choose__title:not(:last-child) {
+    margin-bottom: clamp( 1.25rem , 0.4207317073rem  +  4.1463414634vw , 3.375rem );
+  }
+}
+@media (max-width: 20em) {
+  .choose__title:not(:last-child) {
+    margin-bottom: 1.25rem;
+  }
+}
+.choose__items {
+  display: grid;
+  gap: 2.1875rem;
+}
+@media (min-width: 29.99875em) {
+  .choose__items {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (min-width: 29.99875em) and (max-width: 61.99875em) {
+  .choose__items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.item-choose {
+  position: relative;
+  z-index: 5;
+  text-align: center;
+  display: grid;
+}
+.item-choose__logo {
+  justify-self: center;
+}
+.item-choose__logo:not(:last-child) {
+  margin-bottom: 0.9375rem;
+}
+.item-choose__title {
+  letter-spacing: 0.0178571429em;
+}
+@media (min-width: 71.25em) {
+  .item-choose__title {
+    font-size: 1.75rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 71.25em) {
+  .item-choose__title {
+    font-size: clamp( 1.25rem , 1.0548780488rem  +  0.9756097561vw , 1.75rem );
+  }
+}
+@media (max-width: 20em) {
+  .item-choose__title {
+    font-size: 1.25rem;
+  }
+}
 .swiper {
   overflow: hidden;
 }
