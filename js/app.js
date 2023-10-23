@@ -861,7 +861,7 @@
     c();
   }
   let M, P, k;
-  function O() {
+  function A() {
     return (
       M ||
         (M = (function () {
@@ -892,11 +892,11 @@
       M
     );
   }
-  function A(e = {}) {
+  function O(e = {}) {
     return (
       P ||
         (P = (function ({ userAgent: e } = {}) {
-          const t = O(),
+          const t = A(),
             s = p(),
             i = s.navigator.platform,
             r = e || s.navigator.userAgent,
@@ -960,7 +960,7 @@
       k
     );
   }
-  const I = {
+  const _ = {
     on(e, t, s) {
       const i = this;
       if ("function" != typeof t) return i;
@@ -1035,7 +1035,7 @@
       );
     },
   };
-  const _ = {
+  const I = {
     updateSize: function () {
       const e = this;
       let t, s;
@@ -2336,7 +2336,7 @@
       (e.allowSlideNext = i),
       e.params.watchOverflow && n !== e.snapGrid && e.checkOverflow();
   }
-  function V(e) {
+  function W(e) {
     const t = this;
     t.enabled &&
       (t.allowClick ||
@@ -2345,7 +2345,7 @@
           t.animating &&
           (e.stopPropagation(), e.stopImmediatePropagation())));
   }
-  function W() {
+  function V() {
     const e = this,
       { wrapperEl: t, rtlTranslate: s, enabled: i } = e;
     if (!i) return;
@@ -2416,8 +2416,8 @@
         (e.onTouchStart = B.bind(e)),
           (e.onTouchMove = q.bind(e)),
           (e.onTouchEnd = j.bind(e)),
-          s.cssMode && (e.onScroll = W.bind(e)),
-          (e.onClick = V.bind(e)),
+          s.cssMode && (e.onScroll = V.bind(e)),
+          (e.onClick = W.bind(e)),
           i.touch && !F && (t.addEventListener("touchstart", R), (F = !0)),
           X(e, "on");
       },
@@ -2651,8 +2651,8 @@
     };
   }
   const ee = {
-      eventsEmitter: I,
-      update: _,
+      eventsEmitter: _,
+      update: I,
       translate: z,
       transition: {
         setTransition: function (e, t) {
@@ -2794,8 +2794,8 @@
       }
       const i = this;
       (i.__swiper__ = !0),
-        (i.support = O()),
-        (i.device = A({ userAgent: s.userAgent })),
+        (i.support = A()),
+        (i.device = O({ userAgent: s.userAgent })),
         (i.browser = $()),
         (i.eventsListeners = {}),
         (i.eventsAnyListeners = []),
@@ -3435,8 +3435,10 @@
       document
         .querySelector(".reviews__items")
         .addEventListener("click", function (e) {
-          if ("VIDEO" === e.target.tagName) {
-            const t = e.target;
+          if (e.target.closest(".item-reviews__video")) {
+            const t = e.target
+              .closest(".item-reviews__video")
+              .querySelector("video");
             t.paused
               ? (t.play(), t.parentElement.classList.add("_active"))
               : (t.pause(), t.parentElement.classList.remove("_active"));

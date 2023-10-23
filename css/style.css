@@ -1158,8 +1158,12 @@ textarea.input {
 }
 .reviews__header {
   display: flex;
-  flex-direction: column;
   row-gap: 1.25rem;
+}
+@media (max-width: 47.99875em) {
+  .reviews__header {
+    flex-direction: column;
+  }
 }
 @media (min-width: 47.99875em) {
   .reviews__header {
@@ -1323,6 +1327,67 @@ textarea.input {
 .item-reviews__location {
   transition: color 0.3s ease 0s;
   color: #58bebf;
+}
+
+.experience {
+  background: url("../img/experience/Bg.jpg") 0 3.4375rem no-repeat;
+  background-size: cover;
+}
+@media (max-width: 47.99875em) {
+  .experience {
+    margin-top: -9.75rem;
+  }
+}
+.experience__container {
+  display: grid;
+}
+@media (min-width: 47.99875em) {
+  .experience__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.experience__content {
+  align-self: self-end;
+  color: #fff;
+  padding-top: 9.75rem;
+  padding-bottom: 3.4375rem;
+}
+@media (min-width: 47.99875em) {
+  .experience__content {
+    max-width: 22.5rem;
+  }
+}
+@media (max-width: 47.99875em) {
+  .experience__content {
+    padding-bottom: 1.25rem;
+    justify-self: center;
+  }
+}
+.experience__image {
+  align-self: self-end;
+}
+@media (max-width: 47.99875em) {
+  .experience__image {
+    display: none;
+  }
+}
+.experience__image img {
+  width: 100%;
+}
+.experience__title:not(:last-child) {
+  margin-bottom: 0.9375rem;
+}
+.experience__text:not(:last-child) {
+  margin-bottom: 1.875rem;
+}
+.experience__button {
+  color: #323232;
+  background-color: #fff;
+}
+@media (any-hover: hover) {
+  .experience__button:hover {
+    background-color: #bbb;
+  }
 }
 .swiper {
   overflow: hidden;
