@@ -1330,12 +1330,11 @@ textarea.input {
 }
 
 .experience {
-  background: url("../img/experience/Bg.jpg") 0 3.4375rem no-repeat;
-  background-size: cover;
+  background: url("../img/experience/Bg.png") 0 3.4375rem/cover no-repeat;
 }
 @media (max-width: 47.99875em) {
   .experience {
-    margin-top: -9.75rem;
+    margin-top: -6.25rem;
   }
 }
 .experience__container {
@@ -1347,14 +1346,14 @@ textarea.input {
   }
 }
 .experience__content {
-  align-self: self-end;
   color: #fff;
-  padding-top: 9.75rem;
-  padding-bottom: 3.4375rem;
+  padding-top: 12.25rem;
 }
 @media (min-width: 47.99875em) {
   .experience__content {
+    align-self: self-end;
     max-width: 22.5rem;
+    padding-bottom: 3.4375rem;
   }
 }
 @media (max-width: 47.99875em) {
