@@ -462,12 +462,12 @@ textarea.input {
 }
 @media (min-width: 20em) and (max-width: 71.25em) {
   .footer {
-    padding-top: clamp( 1.25rem , -0.6036585366rem  +  9.2682926829vw , 6rem );
+    padding-top: clamp( 2.5rem , 1.1341463415rem  +  6.8292682927vw , 6rem );
   }
 }
 @media (max-width: 20em) {
   .footer {
-    padding-top: 1.25rem;
+    padding-top: 2.5rem;
   }
 }
 @media (min-width: 71.25em) {
@@ -477,12 +477,12 @@ textarea.input {
 }
 @media (min-width: 20em) and (max-width: 71.25em) {
   .footer {
-    padding-bottom: clamp( 1.25rem , -0.262195122rem  +  7.5609756098vw , 5.125rem );
+    padding-bottom: clamp( 2.5rem , 1.4756097561rem  +  5.1219512195vw , 5.125rem );
   }
 }
 @media (max-width: 20em) {
   .footer {
-    padding-bottom: 1.25rem;
+    padding-bottom: 2.5rem;
   }
 }
 .footer__body {
@@ -1093,6 +1093,7 @@ textarea.input {
 }
 
 .serve {
+  padding-bottom: 1.875rem;
   position: relative;
 }
 @media (min-width: 71.25em) {
@@ -1108,6 +1109,11 @@ textarea.input {
 @media (max-width: 20em) {
   .serve {
     padding-top: 1.875rem;
+  }
+}
+@media (max-width: 47.99875em) {
+  .serve {
+    background-color: #f5f6fa;
   }
 }
 .serve__header {
